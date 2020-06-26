@@ -11,7 +11,112 @@
 	margin-right: 200px;
 	}
 	ul {
+  	list-style-type: none;<!doctype html>
+<html>
+<head>
+<style type="text/css">
+	body {
+	background-image: url('1.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 150% 100%;
+	background-attachment: fixed;
+	margin-right: 200px;
+	}
+	ul {
   	list-style-type: none;
+	margin-top: 0px;
+	overflow: hidden;
+	margin-right: 350px;
+	margin-bottom: 50px;
+	float: right;
+	left: 500px;
+}
+	li {
+	  float: left;
+}
+
+	li a {
+	  font-size: 25px;
+	  font-weight: bold;
+	  font-style:oblique;
+	  display: block;
+	  color:azure;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+	
+
+	li a:hover:not(.active) {
+	  color:#a4a4bf;
+}
+
+	li a.active {
+	  text-decoration:none;
+	  color:rgba(255,255,255,1.00) ;
+	}
+
+	.theme{
+		color:aliceblue;
+		font-weight: bold;
+		font-size: 55px;
+		font-style: italic;
+		margin-left: 220px;
+		text-shadow: 2px 2px 6px #ffffff;
+	}
+	.slideshow{ 
+		height: 232px; width: 232px; margin-left: 610px; margin-top:150px; margin-bottom: 20px;
+	}
+	.slideshow img{ 
+		padding: 15px; background-color: #eee; 
+	}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+<meta charset="utf-8">
+<title>當我們憶起</title>	
+</head>
+
+<body>
+<table width="90%" border="0">
+  <tbody>
+    <tr>
+      <td><img src="logo1.png" width="200" height="200" ></td>
+      <td><p class="theme" >～When we are together～</p></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  	<li><a href="eats.html">Eats</a></li>
+  	<li><a href="drinking.html">Drinking</a></li>
+  	<li><a href="Playing.html">Playing</a></li>
+</ul>
+
+<div class="slideshow">
+		<a href="eats.html"><img src="index/3.jpg" width="300" height="300" alt=""/></a>
+		<a href="drinking.html"><img src="index/4.jpg" width="300" height="300" alt=""/></a>
+		<a href="Playing.html"><img src="index/logo.jpg" width="300" height="300" alt=""/></a>
+	</div>
+
+ 
+ 
+</body>
+</html>
+
 	margin-top: 0px;
 	overflow: hidden;
 	margin-right: 350px;
